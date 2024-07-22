@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ani_master/assignments/assignment28_screen.dart';
+import 'package:flutter_ani_master/assignments/assignment30_screen.dart';
+import 'package:flutter_ani_master/screens/apple_watch_screen.dart';
+import 'package:flutter_ani_master/screens/explicit_animations_screen.dart';
 import 'package:flutter_ani_master/screens/implicit_animations_screen.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -36,10 +38,28 @@ class MenuScreen extends StatelessWidget {
               onPressed: () {
                 _goToPage(
                   context,
-                  const Assignment28Screen(),
+                  const ExplicitAnimationsScreen(),
                 );
               },
-              child: const Text('Implicit Animations 숙제'),
+              child: const Text('Explicit Animations'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const AppleWatchScreen(),
+                );
+              },
+              child: const Text('Apple Watch'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const Assignment30Screen(),
+                );
+              },
+              child: const Text('Custom Painter 숙제'),
             ),
           ],
         ),
